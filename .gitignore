@@ -1,0 +1,6 @@
+Origin
+Debug
+*.vcxproj*
+*.sln
+.vscode
+.vs
