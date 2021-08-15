@@ -5,3 +5,7 @@ Debug
 *.sln
 .vscode
 .vs
+
+# Intellij IDEA
+.idea
+out
