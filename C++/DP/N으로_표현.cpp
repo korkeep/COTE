@@ -5,7 +5,6 @@ using namespace std;
 
 int answer = 2147483647;
 void recursive(int N, int number, int cnt, int sum) {
-
 	// 8보다 큰 경우
 	if (cnt > 8) return;
 
@@ -13,9 +12,9 @@ void recursive(int N, int number, int cnt, int sum) {
 	if (sum == number)
 		if (answer > cnt) answer = cnt;
 
-	int i, NN;
+	int i, NN;	// NN: 반복되는 숫자
 	for (i = 1, NN = 0; i <= 8; i++) {
-		NN = NN * 10 + N;	// 반복되는 숫자
+		NN = NN * 10 + N;
 		recursive(N, number, cnt + i, sum + NN);
 		recursive(N, number, cnt + i, sum - NN);
 		recursive(N, number, cnt + i, sum / NN);
